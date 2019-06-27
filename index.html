@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/styles.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+<link rel="manifest" href="/manifest.json">
+<title>I heart pwa</title>
+</head>
+
+<body>
+
+<!--Navbar-->
+<div id="navbar">
+	<div id="logo">
+		<img id="logo-navbar" src="img/logo.svg"/>
+	</div>
+	<div id="menubutton">
+		<p>Menu</p>
+		<img id="hamburger" src="img/menu.svg"/>
+	</div>
+</div>
+
+<!--Popup-->
+<div id="popupmenu">
+	<div id="inner-popupmenu">
+		<p class="menu" id="menu-iheartpwa">I heart pwa</p>
+		<p class="menu" id="menu-intro">Intro</p>
+		<p class="menu" id="menu-benefits">Benefits</p>
+		<p class="menu" id="menu-howto">Checklist</p>
+		<p class="menu" id="menu-examples">Examples</p>
+		<p class="menu" id="menu-cuckoo">A project by Cuckoo Coding GmbH</p>
+	</div>
+</div>
+
+<!--Section 1-->
+<section id="iheartpwa">
+	<img id="logo-first-section" src="img/logo.svg"/>
+</section>
+
+<!--Section 2-->
+<section id="intro">
+	<div class="innersection full">
+		<div id="howto-header-div">
+			<h1> PWA</h1>
+			<img id="heart-img" src="img/heart.svg"/>
+		</div>
+		<h2>A beginner's workshop</h2>
+		<div class="innertext">
+			<p>We call a website a "Progressive Web App" if it behaves like an app - meaning the design is responsive, it's downloadable to your phone (iPhones too, since last year, whoop whoop) and has offline capabilities.</p>
+			<p>The app should work across different browsers and ensure backwards-compatibility for older browsers (hence "progressive").</p>
+			<p>Every website can be turned into a PWA with just some little adjustments, doesn't matter if it's written in React or Angular, or just plain old Javascript/CSS/HTML. Here we'll stick with the latter.</p>
+			<p>By adding a Service Worker file we'll optimize the caching of the browser and control the offline capabilities.</p> 
+			<p>With a Manifest file we define the metadata necessary to add the app to our phone`s home screen.</p>
+		</div>
+	</div>
+</section>
+
+<!--Section 3-->
+<section id="benefits">
+	<div class="wrapper">
+		<div class="innertext half">
+			<h1>Benefits...</h1>
+			<p>PWAs give the owner the best of both worlds: While providing a "native" feeling for the app users, they are accessible from all devices with minimum development cost and effort.</p>
+			<p>PWA development is also far faster and easier than native development.</p>
+			<h2>... and weaknesses</h2>
+			<p>You cannot find your PWA on one of the app stores.</p>
+			<p>The access to some of the hardware features of the device is limited, and not all devices support the same range of PWA features (yet).</p>
+			<p>iOS so far does not support Web Notifications; Background Sync and a couple of the Manifest file's attributes.</p>
+		</div>
+		<div class="innerhalfsmall hide">
+			<img id="benefits-img" src="img/benefits.svg">
+			<h2>// Handling the requirements and pitfalls of the Google Play and the Apple Store can really suck sometimes. A PWA can be up and running in a minute.</h2>
+		</div>
+	</div>
+</section>
+
+<!--Section 4-->
+<section id="howto">
+	<div class="innersection full">
+		<div id="howto-header-div">
+			<h1>Checklist</h1>
+			<img id="check-img" src="img/check.svg"/>
+		</div>
+		<h2>A progressive webpage must fulfill all the following requirements:</h2>
+		<ul>
+			<li>Served via HTTPS</li>
+			<li>Pages are responsive on mobile devices</li>
+			<li>The app has a serviceworker file and all app URLs load while offline</li>
+			<li>The app has a Web App Manifest file to define the metadata</li>
+			<li>Fast first loading time</li>
+			<li>Site works cross-browser</li>
+		</ul>
+		<h2>You can check your PWA with <a href="https://developers.google.com/web/tools/lighthouse/">Lighthouse</a> in Chrome Developer Tools.</h2>
+	</div>
+</section>
+
+<!--Section 5-->
+<section id="examples">
+	<div class="wrapper">
+		<div class="innersection half hide">
+			<img id="apps-img" src="img/apps.svg">
+		</div>
+		<div class="innertext half">
+			<h1>PWA examples</h1>
+			<ul>
+				<li><a href="https://paperplanes.world/">Paperplanes</a></li>
+				<li><a href="https://app.starbucks.com/">Starbucks</a></li>
+				<li><a href="https://ichbindannkurzweg.de/">Ichbindannkurzweg</a></li>
+				<li><a href="https://getkana.com/">Get Kana</a></li>
+				<li><a href="https://deanhume.github.io/beer/">Progressive Beer</a></li>
+				<li><a href="https://snapw.at/">Snapwat</a></li>
+			</ul>	
+		</div>
+	</div>
+</section>
+
+<!--Section 6-->
+<section id="cuckoo">
+	<div class="innersection full">
+		<div class="logo-div">
+			<p>A project by</p>
+			<a href="https://cuckoo-coding.com"><img id="cuckoo-logo" src="img/cuckoo.svg"/></a>
+		</div>
+		<div class="logo-div">
+			<p>Download this code</p>
+			<a href="https://github.com"><img id="github-logo" src="img/github.svg"/></a>
+		</div>
+		<div class="logo-div">
+			<p>PWA online course</p>
+			<a href="https://www.udemy.com/progressive-web-app-pwa-the-complete-guide/"><img id="udemy-logo" src="img/udemy.svg"/></a>
+		</div>
+	</div>
+</section>
+
+<!--Jquery-->
+<script src="js/jquery.js"></script>
+<script src="js/mycode.js"></script>
+
+</body>
+
+</html>

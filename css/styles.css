@@ -1,0 +1,403 @@
+@charset "UTF-8";
+
+html *
+{
+	font-family: 'Nunito', sans-serif !important;
+	color: white !important;
+}
+
+body{
+	height: 100vh;
+	width: 100vw;
+	padding: 0;
+	margin: 0;
+	background-color: #99D3AD;
+}
+
+/*Navbar*/
+
+#navbar{
+	height: 70px;
+	width: 100vw;
+	display: none;
+	position: fixed;
+	top:0;
+	background-color: #FFFFFF;
+  	z-index: 300;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#logo-navbar{
+	padding-left: 3vw;	
+	height: 50px;
+	width: auto;
+}
+
+#menubutton{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	padding-right: 3vw;
+}
+
+#menubutton p{
+	font-size: 2.5vh;
+	font-weight: bold;
+	padding-right: 2vh;
+	padding-bottom: 0;
+	color: #207383 !important;
+}
+
+#hamburger{
+	height: 30px;
+	width: auto;
+}
+
+/*Pop up Menu*/
+
+#popupmenu{
+	position: fixed;
+	top: 70px;
+	right: 0;
+	bottom:0;
+	z-index: 400;
+	width: 400px;
+	display: none;	
+    flex-direction: column; 
+    justify-content: center;
+	align-items: center;
+	background-color: #207383;
+}
+
+#inner-popupmenu{
+	width: 300px;
+	display: flex;	
+    flex-direction: column; 
+    justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.menu{
+	cursor: pointer;
+}
+
+/*+++++++++++++ smart phone portrait +++++++++++++*/
+@media screen and (max-width: 479px) and (orientation: portrait){ 
+	#popupmenu{
+		width: 100vw;
+	}	
+	#inner-popupmenu{
+		width: 80vw;
+	}
+
+}
+
+/*Generell*/
+
+h1{
+	font-size: 7vh;
+	margin-bottom: 5px;
+}
+
+h2{
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+li, p{
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+p{
+	font-size: 1.2em !important;
+}
+
+li{
+	font-size: 1.4em !important;
+}
+
+a{
+	text-decoration: underline;
+	color: white;
+	cursor: pointer;
+}
+
+ul{
+	list-style-type: square; 
+}
+
+.innersection{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.innertext{
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column;
+}
+
+.full{
+	height: 80vh;
+	width: 70vw;
+}
+
+.half{
+	height: 80vh;
+	width: 35vw;
+}
+
+.innerhalfsmall{
+	height: 60vh;
+	width: 35vw;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+}
+
+
+/*+++++++++++++ smart phone portrait +++++++++++++*/
+@media screen and (max-width: 479px) and (orientation: portrait){ 
+	.full{
+		height: 90vh;
+		width: 90vw;
+	}
+
+	.half{
+		width: 90vw;
+	}
+
+	.hide{
+		display: none;
+	}
+
+	h1{
+		font-size: 2rem;
+	}
+
+	h2{
+		font-size: 1.3em;
+		margin-top: 15px;
+
+	}
+
+	li, p {
+		font-size: 1em !important;	
+	}
+
+}
+
+/*+++++++++++++ tablet portrait +++++++++++++*/
+@media screen and (max-width: 767px) and (min-width: 480px) and (orientation: portrait){ 
+	.full{
+		height: 90vh;
+		width: 90vw;
+	}
+
+	.innerhalf{
+		width: 90vw;
+	}
+
+	.hide{
+		display: none;
+	}
+
+	h1{
+		font-size: 2rem;
+	}
+
+	h2{
+		font-size: 1.3em;
+	}
+
+	li, p {
+		font-size: 1.1em !important;	
+	}
+
+}
+
+/*Sections*/
+
+section{
+	min-height: 100vh;
+	width: 100vw;	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/*Section 1 white*/
+
+#iheartpwa{
+	background-color: #FFFFFF;
+}
+
+#logo-first-section{
+	height: auto;
+	width: 70vw;
+}
+
+/*Section 2 yellow*/
+
+#intro{
+	background-color: #FDCE76;
+}
+
+#intro h1{
+	margin-top: 15px;
+}
+
+#intro h2{
+	margin-top: 15px;
+}
+
+#intro p{
+	margin-top: 15px;
+}
+
+#intro-header-div{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+#heart-img{
+	width: 8vw;
+	padding-left: 20px;
+}
+
+/*Section 3 light green*/
+
+#benefits{
+	background-color: #99D3AD;
+}
+
+.wrapper{
+	width: 90vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+
+#benefits h1{
+	color: white;
+}
+
+.innerhalfsmall h2{
+	color: #207383 !important;
+	font-family: monospace !important;
+}
+
+#benefits p{
+	color: white;
+}
+
+#benefits-img{
+	width: 17vw;
+}
+
+
+/*Section 4 red*/
+
+#howto{
+	background-color: #F8333C;
+}
+
+#howto h1{
+	margin-top: 15px;
+}
+
+#howto-header-div{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+#check-img{
+	width: 8vw;
+	padding-left: 30px;
+}
+
+@media screen and (max-width: 767px) and (orientation: portrait){ 
+
+	#check-img{
+		width: 12vw;
+	}
+
+}
+
+/*Section 5 coral*/
+
+#examples{
+	background-color: #F28D81;
+	justify-content: space-around;
+}
+
+#apps-img{
+	width: 27vw;
+}
+
+@media screen and (max-width: 767px) and (orientation: portrait){ 
+
+	#examples .innertext{
+		align-items: center;
+	}
+
+}
+
+/*Section 6 white*/
+
+#cuckoo{
+	background-color: white;
+	align-items: flex-end;
+}
+
+#cuckoo p{
+	color: #929292 !important;
+	font-size: 1.3em !important;
+	margin-bottom: 10px;
+}
+
+.logo-div{
+	height: 25vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo-div img{
+	height: 15vh;
+}
+
+#cuckoo-logo{
+	height: 20vh;
+	width: auto;
+	cursor: pointer;
+}
+
+#github-logo{
+	width: auto;
+	cursor: pointer;
+}
+
+#udemy-logo{
+	height: 9vh;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 479px) and (orientation: portrait){ 
+	#cuckoo-logo{
+		width: 70vw;
+	}
+}

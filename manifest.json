@@ -1,0 +1,26 @@
+{
+
+    "name": "i heart pwa",
+    "short_name": "pwa",
+    "start_url": "/index.html",
+    "scope":".",
+    "display": "standalone",
+    "background_color": "#99D3AD",
+    "theme_color": "#FDC966",
+    "description": "pwa workshop app",
+    "dir": "ltr",
+    "eng": "en-US",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+          "src": "img/favicon.png",
+          "type": "image/png",
+          "sizes": "192x192"
+        },
+        {
+          "src": "img/splashicon.png",
+          "type": "image/png",
+          "sizes": "512x512"
+        }
+      ]
+}
