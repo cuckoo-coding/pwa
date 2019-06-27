@@ -1,5 +1,5 @@
 /* Update names to update caches!*/
-var CACHE_STATIC_NAME = 'staticAssets-v1';
+var CACHE_STATIC_NAME = 'staticAssets-ver1';
 var STATIC_FILES = [
   // You can also load google font and other foreign assets here by simply adding the whole url to their server
   '/',
