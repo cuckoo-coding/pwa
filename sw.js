@@ -11,6 +11,7 @@ var STATIC_FILES = [
   'img/benefits.svg',
   'img/check.svg',
   'img/cuckoo.svg',
+  'img/favicon.ico',
   'img/favicon.png',
   'img/github.svg',
   'img/heart.svg',
