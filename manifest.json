@@ -9,7 +9,7 @@
     "theme_color": "#FDC966",
     "description": "pwa workshop app",
     "dir": "ltr",
-    "eng": "en-US",
+    "lang": "en-US",
     "orientation": "portrait-primary",
     "icons": [
         {
